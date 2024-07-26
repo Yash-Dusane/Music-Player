@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" width="400" height="100">
+  <!-- Background shape -->
+  <rect x="0" y="0" width="400" height="100" fill="#264653"/>
+
+  <!-- Text for "नमः" -->
+  <text x="50" y="70" font-family="Arial, sans-serif" font-size="48" fill="#f4a261">नमः</text>
+
+  <!-- Om symbol -->
+  <path d="M 300 50 Q 300 20 350 20 Q 390 20 390 50 Q 390 80 350 80 Q 300 80 300 50 Z" fill="#e9c46a"/>
+  <circle cx="345" cy="50" r="10" fill="#e76f51"/>
+</svg>

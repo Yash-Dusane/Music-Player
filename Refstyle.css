@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Center aligns the content */
+}
+
+.header {
+    font-size: 2.5em; /* Larger heading size */
+    margin-bottom: 20px; /* Space below header */
+    position: absolute; /* Absolute positioning */
+    top: 20px; /* Distance from top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center using translate */
+    color: aqua;
+}
+
+.back-button {
+    position: absolute; /* Absolute positioning */
+    top: 50px; /* Distance from top */
+    left: 30px; /* Distance from left */
+    padding: 10px;
+    background-color: #333;
+    color: aquamarine;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.references {
+    margin-top: 100px; /* Adjusted margin */
+    text-align: left; /* Align references to the left */
+    max-height: calc(100vh - 140px); /* Maximum height with consideration for header and back button */
+    overflow-y: auto; /* Enable vertical scroll */
+}
+
+.reference {
+    display: flex; /* Flexbox for layout */
+    align-items: flex-start; /* Align content at the top */
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.bullet-point {
+    flex: 0 0 auto; /* Prevents bullet point from growing */
+    margin-right: 15px; /* Space between bullet point and content */
+    margin-top: 12px; /* Adjust to align with the heading */
+}
+
+.bullet-point svg {
+    width: 24px;
+    height: 24px;
+    fill: #fff; /* Color of the bullet point */
+    vertical-align: middle; /* Align vertically */
+}
+
+.reference-content {
+    flex: 1; /* Flexbox item takes remaining space */
+}
+
+.reference h2 {
+    margin-top: 0;
+    font-size: 1.8em; /* Larger title size */
+}
+
+.reference p {
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 5px;
+}
+
+@media (max-width: 500px){
+    .header{
+        font-size: 2.0em;
+        justify-content: center;
+    }
+
+    .back-button {
+        position: absolute; /* Absolute positioning */
+        top: 10px; /* Distance from top */
+        left: 10px; /* Distance from left */
+        padding: 5px;
+        background-color: #333;
+        color: aquamarine;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+}

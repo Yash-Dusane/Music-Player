@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iTunes Song Search</title>
+  <link rel="stylesheet" href="srchstyle.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="nav-button">Home</a>
+      <a href="index.html" class="nav-button-mb">
+        <img src="svgs/diya-lamp.svg" alt="Diya Lamp">
+        <img src="svgs/musiclogo.svg" alt="Music Logo">
+      </a>
+      <div class="search-and-icons">
+        <div class="lg1">
+        <img class="invert" src="svgs/diya-lamp.svg" alt="Diya Lamp" class="nav-icon"> </div>
+        <div class="search-bar">
+          <input type="text" id="searchBar" placeholder="Search for songs...">
+          <button id="searchButton">Search</button>
+        </div>
+        <div class="lg2">
+          <img class="invert" src="svgs/musiclogo.svg" alt="Music Logo" class="nav-icon">
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <div id="results"></div>
+  </div>
+
+  <script src="search.js"></script>
+</body>
+</html>
